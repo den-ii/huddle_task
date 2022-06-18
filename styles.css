@@ -246,6 +246,7 @@ body{
     }
     .segundo{
         flex-wrap: wrap;
+        justify-content: center;
     }
     .one button{
         width: 100%;
