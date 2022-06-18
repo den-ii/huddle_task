@@ -3,6 +3,7 @@
     --base-button: hsl(322, 100%, 66%);
     --head-color: hsl(208, 11%, 55%);
     --base-color: hsl(192, 100%, 9%);
+    --active: #ff96d8;
 }
 *, ::before, ::after{
     margin: 0;
@@ -56,6 +57,9 @@ header{
     background-color: var(--base-button);
     color: var(--head-bgcolor);
     font-weight: 700;
+}
+.one button:active{
+    background-color: #ff96d8;
 }
 .center{
     margin-top: 5em;
@@ -211,6 +215,9 @@ body{
     border: none;
     font-weight: 700;
 }
+.inbetween button:active{
+    background-color: #ff96d8;
+}
 /* Mobile and Large Phones Styles */
 @media screen and (max-width: 700px) {
     header{
@@ -228,9 +235,14 @@ body{
     }
     section{
         flex-wrap: wrap-reverse;
+        text-align: center;
+        padding: 3em;
     }
     section h2{
         margin-top: 2em;
+    }
+    .inbetween{
+        padding: 1.5em;
     }
     .segundo{
         flex-wrap: wrap;
@@ -264,6 +276,9 @@ body{
         text-align: left;
         padding: 0;
         margin: auto;
+    }
+    header{
+        padding-left: 2em;
     }
     
 
